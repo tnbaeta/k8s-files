@@ -33,7 +33,6 @@ spec:
   ports:
   - port: 8080
     protocol: TCP
-    targetPort: 3000
   selector:
     app: tomcat9
   type: NodePort
