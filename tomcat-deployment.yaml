@@ -8,6 +8,7 @@ kind: Deployment
 metadata:
   name: tomcat9
 spec:
+  namespace: development
   replicas: 2
   selector:
     matchLabels:
@@ -28,6 +29,7 @@ kind: Service
 metadata:
   name: tomcat9-nodeport
 spec:
+  namespace: development
   ports:
   - port: 8080
     protocol: TCP
